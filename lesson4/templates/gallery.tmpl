@@ -1,0 +1,8 @@
+<link rel="stylesheet" href="../css/style.css">
+<title>Галерея</title>
+<h1>Галерея</h1>
+<div class="gallery">
+    {% for img_info in gallery_images %}
+        <a target="_blank" href="/viewimg.php?id={{img_info.id}}" class="photo"><img src="/public/img/small/{{img_info.name}} ?>" alt="{{img_info.name}} " height="200" class="galley-img"></a>
+    {% endfor %}
+</div>
